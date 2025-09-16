@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fresh Farm Produce</title>
+  <meta name="description" content="Buy fresh chillies and free-range organic eggs directly from our farm." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #2e8b57;
+      --accent-light: #4CAF50;
+      --muted: #555;
+      --card: #fff;
+      --bg: #f0f8f5;
+      --shadow: rgba(0,0,0,0.12);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', system-ui, Segoe UI, Roboto, Arial; background: var(--bg); color: #111; line-height: 1.6; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 28px; }
+    header { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; background: #fff; border-bottom: 4px solid var(--accent); }
+    .logo { font-weight: 700; color: var(--accent); font-size: 1.8rem; letter-spacing: 1px; }
+    nav a { margin-left: 18px; text-decoration: none; color: var(--muted); font-weight: 500; transition: 0.3s; }
+    nav a:hover { color: var(--accent-light); }
+
+    .hero { display: grid; grid-template-columns: 1fr; gap: 20px; align-items: center; padding: 40px 0; background: linear-gradient(90deg, #e0f2f1 0%, #ffffff 100%); border-radius: 12px; box-shadow: 0 6px 18px var(--shadow); }
+    .hero h1 { font-size: 2.2rem; margin-bottom: 12px; color: var(--accent); }
+    .hero p { color: var(--muted); font-size: 1.05rem; }
+    .btn { display: inline-block; padding: 12px 18px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: 0.3s; }
+    .btn-primary { background: var(--accent); color: #fff; box-shadow: 0 4px 10px var(--shadow); }
+    .btn-primary:hover { background: var(--accent-light); transform: translateY(-2px); }
+
+    .card { background: var(--card); padding: 18px; border-radius: 12px; box-shadow: 0 6px 18px var(--shadow); transition: transform 0.3s, box-shadow 0.3s; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px var(--shadow); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+    .card img { width: 100%; border-radius: 10px; object-fit: cover; margin-bottom: 12px; }
+
+    .offer-banner { background: var(--accent-light); color: #fff; text-align: center; padding: 14px; border-radius: 8px; margin-bottom: 20px; font-weight: 700; font-size: 1.1rem; box-shadow: 0 4px 12px var(--shadow); }
+
+    footer { padding: 28px 0; color: var(--muted); font-size: 0.9rem; text-align: center; }
+    input, textarea { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #e4e7ef; margin-top: 8px; }
+
+    @media(min-width:900px){
+      .hero { grid-template-columns: 1fr 450px; }
+      .hero h1 { font-size: 2.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">Fresh Farm Produce</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Farm-fresh Chillies & Organic Eggs</h1>
+        <p>Homegrown chillies and free-range organic eggs directly from our farm. 100% natural, chemical-free, and full of flavor.</p>
+        <p style="margin-top:18px">
+          <a class="btn btn-primary" href="#products">Shop Now</a>
+          <a class="btn" href="#contact" style="margin-left:8px;">Order Today</a>
+        </p>
+      </div>
+      <aside class="card" style="background:#e8f5e9">
+        <h3 style="color:var(--accent)">Quick info</h3>
+        <p style="color:var(--muted);margin-top:8px">Phone: <strong>0765329409</strong><br>Email: <strong>orders@freshfarm.com</strong></p>
+        <p style="margin-top:12px"><strong>Delivery:</strong><br>Available in your area, cash on delivery accepted.</p>
+      </aside>
+    </section>
+
+    <div class="offer-banner">Special Offer: Buy 2 kg of chillies and get 2 eggs FREE!</div>
+
+    <section id="about" style="margin-top:28px;">
+      <div class="card" style="background:#e0f2f1">
+        <h2 style="color:var(--accent)">About Us</h2>
+        <p style="color:var(--muted)">We are a small organic farm dedicated to providing high-quality produce. Our chillies are grown naturally without harmful chemicals, and our hens roam free, giving you fresh, nutritious eggs every day.</p>
+      </div>
+    </section>
+
+    <section id="products" style="margin-top:18px">
+      <h2 style="margin-bottom:12px;color:var(--accent)">Our Products</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1606788075765-3e49f735678d?auto=format&fit=crop&w=800&q=80" alt="Fresh Chillies">
+          <h3>Fresh Chillies</h3>
+          <p style="color:var(--muted)">Spicy, flavorful, and 100% organic. Perfect for cooking and preserving.</p>
+          <p><strong>Price:</strong> Rs. 400 per 500g</p>
+          <p><a class="btn btn-primary" href="https://wa.me/94765329409">Order via WhatsApp</a></p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1589987609592-b27c9cdd64e2?auto=format&fit=crop&w=800&q=80" alt="Organic Eggs">
+          <h3>Free-range Organic Eggs</h3>
+          <p style="color:var(--muted)">Nutritious eggs from happy, free-roaming hens.</p>
+          <p><strong>Price:</strong> Rs. 40 per egg / Rs. 480 per dozen</p>
+          <p><a class="btn btn-primary" href="https://wa.me/94765329409">Order via WhatsApp</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:24px">
+      <h2 style="color:var(--accent)">Contact</h2>
+      <div style="display:grid;grid-template-columns:1fr;gap:12px;margin-top:12px">
+        <div class="card" style="background:#e8f5e9">
+          <form action="mailto:orders@freshfarm.com" method="post" enctype="text/plain">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Your name" required>
+            <label style="margin-top:8px">Email</label>
+            <input type="email" name="email" placeholder="you@example.com" required>
+            <label style="margin-top:8px">Message</label>
+            <textarea name="message" rows="4" placeholder="I’d like to order..." required></textarea>
+            <p style="margin-top:12px"><button class="btn btn-primary" type="submit">Send message</button></p>
+            <p style="color:var(--muted);font-size:0.9rem;margin-top:8px">(This form uses your email client. For a real contact form, use Formspree, Netlify Forms, or a small backend.)</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer style="margin-top:30px">
+      <div class="container" style="padding:0">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+          <div>© <span id="year"></span> Fresh Farm Produce — All rights reserved.</div>
+          <div style="color:var(--muted)">Farm-fresh & organic • Direct from our fields</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
